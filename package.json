@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /parcel-deploy-tutorial/",
+    "build": "parcel build src/index.html --public-url /webpack-test/",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build -- --public-url='/webpack-test/'"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/luxplanjay/parcel-deploy-tutorial/issues"
   },
-  "homepage": "https://luxplanjay.github.io/parcel-deploy-tutorial",
+  "homepage": "https://morozit.github.io/Webpack-test/",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nuke-dist": "^1.0.1"
